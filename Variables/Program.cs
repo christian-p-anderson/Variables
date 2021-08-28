@@ -10,19 +10,14 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            //postfix increment
-            int a = 1;
-            int b = a++;
+            Person john = new Person();
+            john.FirstName = "John";
+            john.LastName = "Smith";
+            john.Introduce();
 
-            //first a = 1 | then b = a | then a is incremented by 1
-            // a = 2, b =1
-
-
-            var c = 1;
-            var d = 2;
-            var e = 3;
-            Console.WriteLine(c > d);
-
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(1, 2);
+            Console.WriteLine(result);
         }
     }
 }
