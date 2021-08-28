@@ -13,7 +13,5 @@ namespace Variables
 
         String lastName = "Anderson";
 
-        
-
     }
 }
