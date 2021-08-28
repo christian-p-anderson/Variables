@@ -11,24 +11,36 @@ namespace Variables
         static void Main(string[] args)
         {
 
-            var number = 2;
-            var count = 10;
-            var totalPrice = 20.95f;
-            var character = 'A';
-            var firstName = "Mosh";
-            var isWorking = true;
-
-            Console.WriteLine(number);
-            Console.WriteLine(count);
-            Console.WriteLine(totalPrice);
-            Console.WriteLine(character);
-            Console.WriteLine(firstName);
-            Console.WriteLine(isWorking);
+            /*            string number = "1234";
+                        int i = Convert.ToInt32(number);
+                        Console.WriteLine(i);
 
 
-            Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+                        try
+                        {
+                        var num = "1234";
+                        byte b = Convert.ToByte(num);
+                        Console.WriteLine(b);
 
-            Console.WriteLine("{0} {1}", float.MinValue, float.MaxValue);
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("err: the number could not be converted to a byte");
+                        }
+            */
+
+            try
+            {
+                string str = "true";
+                bool b = Convert.ToBoolean(str);
+                Console.WriteLine(b);
+
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("The string could not be converted to a bool");
+            }
+
 
         }
     }
