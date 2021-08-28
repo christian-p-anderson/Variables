@@ -10,37 +10,12 @@ namespace Variables
     {
         static void Main(string[] args)
         {
+            //postfix increment
+            int a = 1;
+            int b = a++;
 
-            /*            string number = "1234";
-                        int i = Convert.ToInt32(number);
-                        Console.WriteLine(i);
-
-
-                        try
-                        {
-                        var num = "1234";
-                        byte b = Convert.ToByte(num);
-                        Console.WriteLine(b);
-
-                        }
-                        catch (Exception)
-                        {
-                            Console.WriteLine("err: the number could not be converted to a byte");
-                        }
-            */
-
-            try
-            {
-                string str = "true";
-                bool b = Convert.ToBoolean(str);
-                Console.WriteLine(b);
-
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("The string could not be converted to a bool");
-            }
-
+            //first a = 1 | then b = a | then a is incremented by 1
+            // a = 2, b =1
 
         }
     }
