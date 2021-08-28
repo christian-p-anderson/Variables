@@ -17,6 +17,12 @@ namespace Variables
             //first a = 1 | then b = a | then a is incremented by 1
             // a = 2, b =1
 
+
+            var c = 1;
+            var d = 2;
+            var e = 3;
+            Console.WriteLine(c > d);
+
         }
     }
 }
