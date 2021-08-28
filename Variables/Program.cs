@@ -41,6 +41,12 @@ namespace Variables
             Console.WriteLine(names[0]);
             Console.WriteLine(names[1]);
             Console.WriteLine(names[2]);
+
+            String firstName = "Christian";
+
+            String lastName = "Anderson";
+
+            String fullName = firstName + " " + lastName;
         }
     }
 }
