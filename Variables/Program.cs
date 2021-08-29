@@ -80,32 +80,32 @@ namespace Variables
             //Console.WriteLine(string.Format("array1[0]: {0}, array2[0]: {1}", array1[0], array2[0]));
 
 
-            var number = 1;
-            Increment(number);
-            Console.WriteLine(number);
+            //var number = 1;
+            //Increment(number);
+            //Console.WriteLine(number);
             //the value of number is 1 because it's not effected by the increment method | value type
 
-            var person = new Person() { Age = 20 };
-            MakeOld(person);
-            Console.WriteLine(person.Age);
+            //var person = new Person() { Age = 20 };
+            //MakeOld(person);
+            //Console.WriteLine(person.Age);
             //the value of age is 30 | reference type
 
 
         }
 
-        public static void Increment(int number)
-        {
-            number += 10;
-        }
+        //public static void Increment(int number)
+        //{
+        //    number += 10;
+        //}
 
-        public static void MakeOld(Person person)
-        {
-            person.Age += 10;
-        }
+        //public static void MakeOld(Person person)
+        //{
+        //    person.Age += 10;
+        //}
     }
 
-    public class Person
-    {
-        public int Age;
-    }
+    //public class Person
+    //{
+    //    public int Age;
+    //}
 }
