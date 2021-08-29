@@ -90,18 +90,36 @@ namespace Variables
             //Console.WriteLine(person.Age);
             //the value of age is 30 | reference type
 
-            var season = Season.Summer;
+            //var season = Season.Summer;
 
-            switch (season)
+            //switch (season)
+            //{
+            //    case Season.Autumn:
+            //    case Season.Summer:
+            //        Console.WriteLine("We've got promotion.");
+            //        break;
+
+            //    deafult:
+            //        Console.WriteLine("I don't understand that season!");
+            //        break;
+            //}
+
+            string valOne;
+            Console.WriteLine("Enter the width: ");
+            valOne = Console.ReadLine();
+            var resOne = Convert.ToInt32(valOne);
+
+            string valTwo;
+            Console.WriteLine("Enter the height: ");
+            valTwo = Console.ReadLine();
+            var resTwo = Convert.ToInt32(valTwo);
+
+            if ((resOne / resTwo) == (1/6))
             {
-                case Season.Autumn:
-                case Season.Summer:
-                    Console.WriteLine("We've got promotion.");
-                    break;
-
-                deafult:
-                    Console.WriteLine("I don't understand that season!");
-                    break;
+                Console.WriteLine("you have a rectangle");
+            } else
+            {
+                Console.WriteLine("you don't have a rectangle");
             }
 
         }
