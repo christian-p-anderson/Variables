@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Variables
 {
-    class Program
+    partial class Program
     {
 
         //public enum ShippingMethod{
@@ -90,11 +90,19 @@ namespace Variables
             //Console.WriteLine(person.Age);
             //the value of age is 30 | reference type
 
-            bool isGoldCustomer = true;
+            var season = Season.Summer;
 
-            float price = (isGoldCustomer) ? price = 19.95f : price = 29.95f;
+            switch (season)
+            {
+                case Season.Autumn:
+                case Season.Summer:
+                    Console.WriteLine("We've got promotion.");
+                    break;
 
-            Console.WriteLine(price);
+                deafult:
+                    Console.WriteLine("I don't understand that season!");
+                    break;
+            }
 
         }
 
