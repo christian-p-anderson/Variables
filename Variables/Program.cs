@@ -9,134 +9,46 @@ namespace Variables
     partial class Program
     {
 
-        //public enum ShippingMethod{
-        //    RegularAirMail = 1,
-        //    RegisteredAirMail = 2,
-        //    Express = 3
-        //}
-
-
         static void Main(string[] args)
         {
-            //Person john = new Person();
-            //john.FirstName = "John";
-            //john.LastName = "Smith";
-            //john.Introduce();
-
-            //Calculator calculator = new Calculator();
-            //var result = calculator.Add(1, 2);
-            //Console.WriteLine(result);
-
-            //var numbers = new int[3];
-
-            //numbers[0] = 1;
-            //numbers[1] = 2;
-            //numbers[2] = 3;
-
-            //Console.WriteLine(numbers[0]);
-            //Console.WriteLine(numbers[1]);
-            //Console.WriteLine(numbers[2]);
-
-            //var flags = new bool[3];
-            //flags[0] = true;
-
-            //Console.WriteLine(flags[0]);
-            //Console.WriteLine(flags[1]);
-            //Console.WriteLine(flags[2]);
-
-            //var names = new string[3] { "Jack", "John", "Mary" };
-
-            //Console.WriteLine(names[0]);
-            //Console.WriteLine(names[1]);
-            //Console.WriteLine(names[2]);
-
-            //String firstName = "Christian";
-
-            //String lastName = "Anderson";
-
-            //String fullName = firstName + " " + lastName;
-
-            //var method = ShippingMethod.Express;
-            //Console.WriteLine((int)method);
-
-            //var methodId = 3;
-            //Console.WriteLine((ShippingMethod)methodId);
-
-            //Console.WriteLine(method.ToString());
-
-            //var methodName = "Express";
-            //var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
-
-            //var a = 10;
-            //var b = a;
-            //b++;
-
-            //Console.WriteLine(string.Format("a: {0}, b: {1}", a, b)); //value type
-
-            //var array1 = new int[3] { 1, 2, 3 };
-            //var array2 = array1;
-            //array2[0] = 0;
-            ////what will be the first element in array1? | It will be 0 | reference type
-            //Console.WriteLine(string.Format("array1[0]: {0}, array2[0]: {1}", array1[0], array2[0]));
-
-
-            //var number = 1;
-            //Increment(number);
-            //Console.WriteLine(number);
-            //the value of number is 1 because it's not effected by the increment method | value type
-
-            //var person = new Person() { Age = 20 };
-            //MakeOld(person);
-            //Console.WriteLine(person.Age);
-            //the value of age is 30 | reference type
-
-            //var season = Season.Summer;
-
-            //switch (season)
+            //for (int i = 10; i >= 1; i--)
             //{
-            //    case Season.Autumn:
-            //    case Season.Summer:
-            //        Console.WriteLine("We've got promotion.");
-            //        break;
-
-            //    deafult:
-            //        Console.WriteLine("I don't understand that season!");
-            //        break;
+            //    if(i % 2 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
             //}
 
-            string valOne;
-            Console.WriteLine("Enter the width: ");
-            valOne = Console.ReadLine();
-            var resOne = Convert.ToInt32(valOne);
+            //string name = "John Smith";
+            //foreach (char character in name)
+            //{
+            //    Console.WriteLine(character);
+            //}
 
-            string valTwo;
-            Console.WriteLine("Enter the height: ");
-            valTwo = Console.ReadLine();
-            var resTwo = Convert.ToInt32(valTwo);
+            //var numbers = new int[] { 1, 2, 3, 4 };
 
-            if ((resOne / resTwo) == (1/6))
+            //foreach (var number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+
+            while (true)
             {
-                Console.WriteLine("you have a rectangle");
-            } else
-            {
-                Console.WriteLine("you don't have a rectangle");
+                Console.Write("Type your name: ");
+                string input = Console.ReadLine();
+
+                if (!String.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("@Echo :" + input);
+                    continue;
+                }
+
+                break;
+
             }
 
         }
 
-        //public static void Increment(int number)
-        //{
-        //    number += 10;
-        //}
-
-        //public static void MakeOld(Person person)
-        //{
-        //    person.Age += 10;
-        //}
     }
 
-    //public class Person
-    //{
-    //    public int Age;
-    //}
 }
