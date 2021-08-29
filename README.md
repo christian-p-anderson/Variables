@@ -1,2 +1,2 @@
 # Variables
-### Mosh | C# Variables
+### Mosh | C# Fundamentals
