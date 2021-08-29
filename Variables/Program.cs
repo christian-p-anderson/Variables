@@ -90,6 +90,11 @@ namespace Variables
             //Console.WriteLine(person.Age);
             //the value of age is 30 | reference type
 
+            bool isGoldCustomer = true;
+
+            float price = (isGoldCustomer) ? price = 19.95f : price = 29.95f;
+
+            Console.WriteLine(price);
 
         }
 
