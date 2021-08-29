@@ -9,11 +9,11 @@ namespace Variables
     class Program
     {
 
-        public enum ShippingMethod{
-            RegularAirMail = 1,
-            RegisteredAirMail = 2,
-            Express = 3
-        }
+        //public enum ShippingMethod{
+        //    RegularAirMail = 1,
+        //    RegisteredAirMail = 2,
+        //    Express = 3
+        //}
 
 
         static void Main(string[] args)
@@ -56,16 +56,27 @@ namespace Variables
 
             //String fullName = firstName + " " + lastName;
 
-            var method = ShippingMethod.Express;
-            Console.WriteLine((int)method);
+            //var method = ShippingMethod.Express;
+            //Console.WriteLine((int)method);
 
-            var methodId = 3;
-            Console.WriteLine((ShippingMethod)methodId);
+            //var methodId = 3;
+            //Console.WriteLine((ShippingMethod)methodId);
 
-            Console.WriteLine(method.ToString());
+            //Console.WriteLine(method.ToString());
 
-            var methodName = "Express";
-            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+            //var methodName = "Express";
+            //var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+
+            var a = 10;
+            var b = a;
+            b++;
+
+            Console.WriteLine(string.Format("a: {0}, b: {1}", a, b)); //value type
+
+            var array1 = new int[3] { 1, 2, 3 };
+            var array2 = array1;
+            array2[0] = 0;
+            //what will be the first element in array1? | It will be 0 | reference type
         }
     }
 }
